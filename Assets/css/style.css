@@ -1,6 +1,6 @@
 @font-face {
     font-family: "brexo";
-    src: url("https://github.com/S488U/fetlla/blob/main/Assets/fonts/brexo.ttf");
+    src: url("../fonts/brexo.ttf");
 }
 
 /*** Scroll Bar *****/
@@ -48,6 +48,12 @@ header {
     /* border-bottom: 1px solid grey; */
     padding-bottom: 5px;
     margin-bottom: 26.5px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1024;
+    background-color: #000;
 }
 
 .a-tag {
@@ -88,17 +94,18 @@ header .search i {
 }
 
 .main-container {
-    background-color: black;
-    width: 100%;
-    height: 110vh;
+  margin-top: 7rem;
+  background-color: black;
+  width: 100%;
+  height: 110vh;
 }
 
 .main-container .greeting {
-    text-transform: uppercase;
-    width: 100%;
-    height: 50vh;
-    display: flex;
-    justify-content: center;
+  text-transform: uppercase;
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
 }
 
 .main-container .greeting .greeting-sub {
@@ -132,6 +139,7 @@ h1 {
     position: relative;
     top: 25px;
     transition: 150ms;
+    font-weight: 500;
 }
 
 .main-container .greeting .greeting-sub a:hover {
